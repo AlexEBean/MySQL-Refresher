@@ -1,0 +1,12 @@
+SELECT cat_id AS id, name 
+    FROM cats;
+
+SELECT name AS 'cat name', breed AS 'kitty breed' 
+    FROM cats;
+
+-- This also works
+
+-- SELECT name AS cat_name, breed AS kitty_breed 
+--  FROM cats;
+ 
+DESC cats;
