@@ -31,7 +31,7 @@ SELECT
 FROM books;
 
 SELECT
-    CONCAT(title, " was released in ", released_year) AS blurb
+    CONCAT(title, ' was released in ', released_year) AS blurb
 FROM books;
 
 SELECT
