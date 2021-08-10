@@ -16,7 +16,7 @@ SELECT author_fname, author_lname, AVG(released_year)
 -- Also works
 -- SELECT author_fname, author_lname, AVG(released_year)
 --     FROM books
---     GROUP BY 1, 2;
+--     GROUP BY 2, 1;
 
 SELECT CONCAT(author_fname, ' ', author_lname) AS 'author', pages
 	FROM books
