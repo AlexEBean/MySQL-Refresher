@@ -39,11 +39,11 @@ WHERE SUBSTR(author_lname, 1, 1) IN ('C', 'S');
 SELECT title, author_lname,
 	CASE
 	 WHEN title LIKE '%stories%' THEN 'Short Stories'
-     WHEN title = 'Just Kids' OR title LIKE 'A Heartbreaking Work  of Staggering Genius' THEN 'Memoir'
+     WHEN title IN ('Just Kids', 'A Heartbreaking Work  of Staggering Genius') THEN 'Memoir'
      ELSE 'Novel'
-	END AS 'genre'
+	END AS genre
 FROM books
-ORDER BY TYPE;
+ORDER BY genre;
 
 SELECT author_fname, author_lname, 
 	CASE
