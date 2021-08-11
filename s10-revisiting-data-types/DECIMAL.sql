@@ -1,5 +1,7 @@
 -- DECIMAL(total number of digits, digits after decimal)
 
+-- Also, DECIMAL is best for price because of precision
+
 CREATE TABLE items(price DECIMAL(5,2));
  
 INSERT INTO items(price) VALUES(7);
