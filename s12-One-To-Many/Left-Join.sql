@@ -10,5 +10,5 @@ SELECT
 FROM customers c
 LEFT JOIN orders o
     ON c.id = o.customer_id
-GROUP BY customers.id
+GROUP BY c.id
 ORDER BY total_spent;
