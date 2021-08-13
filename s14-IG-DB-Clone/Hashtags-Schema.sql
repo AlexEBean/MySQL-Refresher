@@ -1,3 +1,6 @@
+-- http://webdev.slides.com/coltsteele/mysql-106#/14
+-- Third works better if you're working with common tags.  Things that are being used often.
+
 CREATE TABLE tags (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
   tag_name VARCHAR(255) UNIQUE,
