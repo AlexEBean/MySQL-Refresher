@@ -1,8 +1,8 @@
+// node s16-Node/faker.js
+
 // for(let i = 0; i < 500; i++){
 //     console.log("HELLO WORLD!");
 //   }
-
-// node s16-Node/app.js
 
 // Run npm i faker in bash
 

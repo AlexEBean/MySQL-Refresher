@@ -1,3 +1,5 @@
+// node s16-Node/MySQL.js
+
 // Run npm install mysql in bash
 
 const mysql = require('mysql');
@@ -17,6 +19,7 @@ connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
 
  // This is effectively SELECT CURTIME() as time, CURDATE() as date, NOW() as now
  const q = 'SELECT CURTIME() as time, CURDATE() as date, NOW() as now';
+ 
  connection.query(q, function (error, results, fields) {
    if (error) throw error;
    console.log(results[0].time);
