@@ -36,13 +36,6 @@ connection.query(b, function (error, results, fields) {
   console.log(results);
 });
 
-// Also works
-// const b = 'SELECT * FROM   users WHERE  created_at = (SELECT Min(created_at) FROM   users)';
-// connection.query(b, function (error, results, fields) {
-//   if (error) throw error;
-//   console.log(results);
-// });
-
 // 3
 
 const c = 'SELECT DATE_FORMAT(created_at, "%M") AS month, COUNT(*) AS count FROM   users GROUP BY month ORDER BY count DESC';
