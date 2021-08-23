@@ -12,3 +12,7 @@ CREATE TRIGGER example_cannot_follow_self
 $$
 
 DELIMITER ;
+
+
+-- Results in error thanks to trigger and prevents insert
+INSERT INTO follows(follower_id, followee_id) VALUES (4, 4);
