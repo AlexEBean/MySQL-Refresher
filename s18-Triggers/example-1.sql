@@ -18,6 +18,7 @@ CREATE TRIGGER must_be_adult
           IF NEW.age < 18
           THEN
               SIGNAL SQLSTATE '45000'
+               -- 45000 is a generic state representing "unhandled user-defined exception"
                     SET MESSAGE_TEXT = 'Must be an adult!';
           END IF;
      END;
